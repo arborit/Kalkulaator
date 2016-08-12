@@ -1,0 +1,492 @@
+﻿<head>
+
+    <script type="text/javascript" src="onlinecalc_update.js"></script>
+</head>
+
+<div id="calc_container">
+    <form method="post" enctype="multipart/form-data">
+
+        <div class="pre-calc-text">
+            <div class="copy_desc">
+                <em><span style="line-height:16px;font-size:12px">Välj lämplig stensort och fyll i formuläret för att beräkna priset på bänkskivan (inkl. måttagning, transport och installation). Innan Ni skickar in offerten ser Ni beräknad pris direkt efter valet av transport och installering.&nbsp; Om priset tilltalar dig, fyller Ni in kontaktinformation och klickar på "Skicka". Vi kontaktar Er inom en arbetsdag.</span></em><strong>
+                    <em>
+                        <span style="line-height:16px;font-size:12px">
+                            <br>
+                            För mer information, kontakta gärna:
+                        </span>
+                    </em><span style="line-height:16px;font-size:12px"><em> </em></span>
+                </strong><span style="line-height:16px;font-size:12px">
+                    <em>
+                        <br>
+                        Tel: 08-559 247 59
+                    </em><br>
+                    <em>e-post: <a href="mailto:info@graniteset.se">info@graniteset.se</a></em>
+                </span>
+            </div>
+        </div>
+
+        <div class="calc_select_mat calc-row">
+            <div class="calc_select_mat_left">
+                Välj en granitsort:
+                <select name="materials" class="required">
+                    <option selected="selected" value="" style="display: none"></option>
+                    <option value="63,Scorpion,2100.00,80">Scorpion</option>
+                    <option value="67,Verde Guatemala,2100.00,80">Verde Guatemala</option>
+                    <option value="68,Nero Africa,2900.00,86">Nero Africa</option>
+                    <option value="70,Nero Africa Mattslipad,2900.00,86">Nero Africa Mattslipad</option>
+                    <option value="71,Baltic Brown,2900.00,75">Baltic Brown</option>
+                    <option value="73,Multicolor Red,2900.00,80">Multicolor Red</option>
+                    <option value="74,Verde Bahia,2900.00,81">Verde Bahia</option>
+                    <option value="75,Steel Grey,3500.00,77">Steel Grey</option>
+                    <option value="77,Balmoral Red,2900.00,79">Balmoral Red</option>
+                    <option value="79,Nero Assoluto,3500.00,91">Nero Assoluto</option>
+                    <option value="80,Nero Angola,3500.00,79">Nero Angola</option>
+                    <option value="81,Nero Assoluto Flammad,3500.00,91">Nero Assoluto Flammad</option>
+                    <option value="82,Nero Assoluto Mattslipad,3500.00,91">Nero Assoluto Mattslipad</option>
+                    <option value="83,Giallo Cecilia,3500.00,78">Giallo Cecilia</option>
+                    <option value="84,Giallo Veneziano,3500.00,78">Giallo Veneziano</option>
+                    <option value="86,Juparana Columbo,3500.00,76">Juparana Columbo</option>
+                    <option value="87,Tan Brown,3500.00,78">Tan Brown</option>
+                    <option value="89,Emperador Dark,4500.00,80">Emperador Dark</option>
+                    <option value="90,Nero Marquina,4500.00,81">Nero Marquina</option>
+                    <option value="91,Blue Pearl,4500.00,82">Blue Pearl</option>
+                    <option value="92,Emerald Pearl,4500.00,81">Emerald Pearl</option>
+                    <option value="93,Star Galaxy,4500.00,89">Star Galaxy</option>
+                    <option value="94,Gobi Brown,3500.00,72">Gobi Brown</option>
+                    <option value="95,Gobi Black,3500.00,72">Gobi Black</option>
+                    <option value="96,Crystal Royal,3500.00,72">Crystal Royal</option>
+                    <option value="97,Gobi Grey,3500.00,72">Gobi Grey</option>
+                    <option value="98,Starlight Brown,3500.00,72">Starlight Brown</option>
+                    <option value="99,Crystal Diamond,3500.00,72">Crystal Diamond</option>
+                    <option value="100,Starlight Black,3500.00,72">Starlight Black</option>
+                    <option value="101,Starlight White,3500.00,72">Starlight White</option>
+                    <option value="102,Crystal Quartz White,3500.00,72">Crystal Quartz White</option>
+                    <option value="103,Crystal Polar White,4500.00,72">Crystal Polar White</option>
+                    <option value="104,Crystal Absolute White,4500.00,34">Crystal Absolute White</option>
+                    <option value="118,Rosa Beta,2100.00,78">Rosa Beta</option>
+                    <option value="121,Bohus Grey,3500.00,78">Bohus Grey</option>
+                    <option value="122,Verde Savana,3500.00,76">Verde Savana</option>
+                    <option value="190,Bianco Carrara C,3500.00,89">Bianco Carrara C</option>
+                    <option value="192,Jasmine White,2900.00,">Jasmine White</option>
+                    <option value="193,Nero Africa Flammad,0.00,">Nero Africa Flammad</option>
+                    <option value="222,Noble Troya,4500.00,72">Noble Troya</option>
+                    <option value="223,Noble Supreme White,4500.00,72">Noble Supreme White</option>
+                    <option value="224,Noble Carrara,4500.00,72">Noble Carrara</option>
+                    <option value="225,Bianco Sardo,2100.00,78">Bianco Sardo</option>
+                    <option value="226,Blue Moon,2900.00,80">Blue Moon</option>
+                    <option value="227,Silver Cloud,3500.00,76">Silver Cloud</option>
+                    <option value="228,White Ice,3500.00,79">White Ice</option>
+                    <option value="229,Briliant Black,3500.00,72">Briliant Black</option>
+                    <option value="230,Brilliant White,3500.00,72">Brilliant White</option>
+                    <option value="231,Noble Botticino,4500.00,72">Noble Botticino</option>
+                    <option value="232,Noble Calista,4500.00,72">Noble Calista</option>
+                    <option value="233,Nero Africa Blue,3500.00,90">Nero Africa Blue</option>
+                </select>			      <div class="error_msg">
+                    Välj en granitsort!
+                </div><!-- .error_msg -->
+            </div><!-- .calc_select_mat_left -->
+            <div class="calc_select_mat_right">
+                <div id="mat_picture"><img class="mat_normal" src="/public/product/Nero Assoluto.jpg"></div><!-- .mat_picture -->
+            </div><!-- .calc_select_mat_right -->
+        </div><!-- .calc_select_mat -->
+
+        <div class="calc_help">
+            <a href="#" onclick="window.open (&quot;http://www.graniteset.se/public/files/help.png&quot;,&quot;help&quot;,&quot;resizable=0,width=800,height=600,left=0,top=0&quot;);return false">
+                HJÄLP
+            </a>
+        </div><!-- .calc_help -->
+
+        <div class="calc_item_number calc-row clear">
+            Antal delar i din bänkskiva?:
+            <select><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">6</option><option value="7">7</option><option value="8">8</option></select>
+        </div><!-- .calc_item_number -->
+
+        <div id="measurment_block" class="calc-row">
+            <div class="calc_item_measurments clear">
+                <span class="item_number">1.</span>
+                Längd:
+                <input type="text" size="2" maxlength="5" name="piece_l[1]" class="required">mm
+                Bredd:
+                <input type="text" size="2" maxlength="5" name="piece_w[1]" class="required">mm
+                <div class="error_msg">Ange längden på din bänkskiva!</div><!-- .error_msg -->
+            </div><!-- .calc_item_measurments -->
+        </div><!-- #measurment_block -->
+
+
+        <div class="calc_shape calc-row clear">
+            <div class="calc_name">
+                Total längd på raka polerade kanter?:
+            </div><!-- .calc_name -->
+            <div class="calc_input">
+                <span class="hand">
+                    <a rel="lightbox[]" href="/public/files/calc_pics/Kandiline-serv.png">
+                        <div class="float_image">
+                            <img src="/public/files/calc_pics/Kandiline-serv.png">
+                        </div><!-- .float_image -->
+                        Rak
+                    </a>
+                </span><!-- .hand -->
+                <input type="text" size="3" maxlength="5" name="shape_square">
+                <span class="units">mm</span><!-- .units -->
+            </div><!-- .calc_input -->
+            <div class="calc_input">
+                <span class="hand">
+                    <a rel="lightbox[]" href="/public/files/calc_pics/Poolymar.png">
+                        <div class="float_image">
+                            <img src="/public/files/calc_pics/Poolymar.png">
+                        </div><!-- .float_image -->
+                        Halvrundad
+                    </a>
+                </span><!-- .float_image -->
+                <input type="text" size="3" maxlength="5" name="shape_half_rounded">
+                <span class="units">mm</span><!-- .units -->
+            </div><!-- .calc_input -->
+            <div class="calc_input">
+                <span class="hand">
+                    <a rel="lightbox[]" href="/public/files/calc_pics/Ymar.png">
+                        <div class="float_image">
+                            <img src="/public/files/calc_pics/Ymar.png">
+                        </div><!-- .float_image -->
+                        Rundad
+                    </a>
+                </span><!-- .hand -->
+                <input type="text" size="3" maxlength="5" name="shape_rounded">
+                <span class="units">mm</span><!-- .units -->
+            </div><!-- .calc_input -->
+        </div><!-- .calc_shape -->
+
+        <div class="calc_radius calc-row clear">
+            <div class="calc_name">
+                Antal rundade hörn?:
+            </div>
+            <div class="calc_input">
+                <span class="hand">
+                    <a rel="lightbox[]" href="/public/files/calc_pics/Raadius-100.png">
+                        <div class="float_image">
+                            <img src="/public/files/calc_pics/Raadius-100.png">
+                        </div>
+                        R &lt; 100mm
+                    </a>
+                </span>
+                <input type="text" size="3" maxlength="3" name="radius1">
+                <span class="units"></span><!-- .units -->
+            </div><!-- .calc_input -->
+            <div class="calc_input">
+                <span class="hand">
+                    <a rel="lightbox[]" href="/public/files/calc_pics/Raadius-100..300.png">
+                        <div class="float_image">
+                            <img src="/public/files/calc_pics/Raadius-100..300.png">
+                        </div>
+                        R100 &lt; 300mm
+                    </a>
+                </span>
+                <input type="text" size="3" maxlength="3" name="radius2">
+                <span class="units"></span><!-- .units -->
+            </div>
+        </div><!-- .calc_radius -->
+
+        <div class="calc_sink_hole calc-row clear">
+            <div class="calc_name">
+                Antal hål för diskhoar?:
+            </div><!-- .calc_name -->
+            <div class="calc_input">
+                <span class="hand">
+                    <a rel="lightbox[]" href="/public/files/calc_pics/Pealt-paigalduv-valamu.png">
+                        <div class="float_image">
+                            <img src="/public/files/calc_pics/Pealt-paigalduv-valamu.png">
+                        </div><!-- .float_image -->
+                        Över monterad
+                    </a>
+                </span><!-- .hand -->
+                <input type="text" size="3" maxlength="3" name="sinkhole1">
+                <span class="units"></span><!-- .units -->
+            </div><!-- .calc_input -->
+            <div class="calc_input">
+                <span class="hand">
+                    <a rel="lightbox[]" href="/public/files/calc_pics/Uputatud-valamu.png">
+                        <div class="float_image">
+                            <img src="/public/files/calc_pics/Uputatud-valamu.png">
+                        </div><!-- .float_image -->
+                        Flush-fit
+                    </a>
+                </span><!-- .hand -->
+                <input type="text" size="3" maxlength="3" name="sinkhole2">
+                <span class="units"></span><!-- .units -->
+            </div><!-- .calc_input -->
+            <div class="calc_input">
+                <span class="hand">
+                    <a rel="lightbox[]" href="/public/files/calc_pics/Alt-paigaldatav-valamu.png">
+                        <div class="float_image">
+                            <img src="/public/files/calc_pics/Alt-paigaldatav-valamu.png">
+                        </div><!-- .float_image -->
+                        Under monterad
+                    </a>
+                </span><!-- .hand -->
+                <input type="text" size="3" maxlength="3" name="sinkhole3">
+                <span class="units"></span><!-- .units -->
+            </div><!-- .calc_input -->
+        </div><!-- .calc_sink_hole -->
+
+
+        <div class="calc_sink_row calc-row clear">
+            <div class="calc_sink calc_name clear" style="width: 100%;">
+                <span>Diskbänkar:</span>
+
+                <select name="sinks">
+                    <option value="">Välj en diskbänkar</option>
+                    <option value="Supra 180-U,1600.00,Supra 180-U.png">Supra 180-U</option>
+                    <option value="Supra 340-U,2100.00,Supra 340-U.png">Supra 340-U</option>
+                    <option value="Supra 400-U,2200.00,Supra 400-U.png">Supra 400-U</option>
+                    <option value="Supra 450-U,2300.00,Supra 450-U.png">Supra 450-U</option>
+                    <option value="Supra 500-U,2400.00,Supra 500-U.png">Supra 500-U</option>
+                    <option value="Zerox 180-U,4100.00,Zerox 180-U.png">Zerox 180-U</option>
+                    <option value="Zerox 340-180-U,9700.00,Zerox 340-180-U.png">Zerox 340-180-U</option>
+                    <option value="Zerox 340-U,4000.00,Zerox 340-U.png">Zerox 340-U</option>
+                    <option value="Zerox 400-400-U,10800.00,Zerox 400-400-U.png">Zerox 400-400-U</option>
+                    <option value="Zerox 400-U,4200.00,Zerox 400-U.png">Zerox 400-U</option>
+                    <option value="Zerox 450-U,4300.00,Zerox 450-U.png">Zerox 450-U</option>
+                    <option value="Zerox 500-U,4400.00,Zerox 500-U.png">Zerox 500-U</option>
+                    <option value="Zerox 550-U,4500.00,Zerox 550-U.png">Zerox 550-U</option>
+                    <option value="Zerox 700-U,4700.00,Zerox 700-U.png">Zerox 700-U</option>
+                    <option value="Ypsilon 550-U,7500.00,Ypsilon 550-U.png">Ypsilon 550-U</option>
+                    <option value="Subline 160-U,4000.00,Subline 160-U.png">Subline 160-U</option>
+                    <option value="Subline 320-U,5200.00,Subline 320-U.png">Subline 320-U</option>
+                    <option value="Subline 340-160-U,9500.00,Subline 340-160-U.png">Subline 340-160-U</option>
+                    <option value="Subline 350-350-U,9500.00,Subline 350-350-U.png">Subline 350-350-U</option>
+                    <option value="Subline 400-U,5800.00,Subline 400-U.png">Subline 400-U</option>
+                    <option value="Subline 500-U,7600.00,Subline 500-U.png">Subline 500-U</option>
+                    <option value="Subline 700-U,6100.00,Subline 700-U.png">Subline 700-U</option>
+                    <option value="Zia 6S,3500.00,Zia 6S.png">Zia 6S</option>
+                    <option value="Nova 5 S,4300.00,Nova 5 S.png">Nova 5 S</option>
+                    <option value="Livit 6 S,3400.00,Livit 6 S.png">Livit 6 S</option>
+                    <option value="Classic 5 S,3500.00,Classic 5 S.png">Classic 5 S</option>
+                    <option value="Zerox 180-IF,3900.00,Zerox 180-IFN.png">Zerox 180-IF</option>
+                    <option value="Zerox 340-IF,4500.00,Zerox 340-IFN.png">Zerox 340-IF</option>
+                    <option value="Zerox 450-IF,4900.00,Zerox 450-IFN.png">Zerox 450-IF</option>
+                    <option value="Zerox 500-IF,5300.00,Zerox 500-IFN.png">Zerox 500-IF</option>
+                    <option value="Claron 180-IF,5400.00,Claron 180-IFN.png">Claron 180-IF</option>
+                    <option value="Claron 340-180-IF,11900.00,Claron 340-180-IFN.png">Claron 340-180-IF</option>
+                    <option value="Claron 340-IF,5400.00,Claron 340-IFN.png">Claron 340-IF</option>
+                    <option value="Claron 400-400-IF,13200.00,Claron 400-400-IFN.png">Claron 400-400-IF</option>
+                    <option value="Claron 400-IF,5900.00,Claron 400-IFN.png">Claron 400-IF</option>
+                    <option value="Claron 450-IF,6000.00,Claron 450-IFN.png">Claron 450-IF</option>
+                    <option value="Claron 500-IF,6300.00,Claron 500-IFN.png">Claron 500-IF</option>
+                    <option value="NT Classic 15 - U,900.00,NT Classic 15 - U.png">NT Classic 15 - U</option>
+                    <option value="NT Classic 20 - U,900.00,NT Classic 20 - U.png">NT Classic 20 - U</option>
+                    <option value="NT Classic 33 - U,1000.00,NT Classic 33 - U.png">NT Classic 33 - U</option>
+                    <option value="NT Classic 45 - U,1200.00,NT Classic 45 - U.png">NT Classic 45 - U</option>
+                    <option value="NT Classic 52 - U,1500.00,NT Classic 52 - U.png">NT Classic 52 - U</option>
+                    <option value="NT Classic 55 - U,1600.00,NT Classic 55 - U.png">NT Classic 55 - U</option>
+                    <option value="NT Classic 76 - U,1900.00,NT Classic 76 - U.png">NT Classic 76 - U</option>
+                    <option value="NT Edge 180 - P / U,2000.00,NT Edge 180 - P / U.png">NT Edge 180 - P / U</option>
+                    <option value="NT Edge 340 - P / U,2300.00,NT Edge 340 - P / U.png">NT Edge 340 - P / U</option>
+                    <option value="NT Edge 500 - P / U,3000.00,NT Edge 500 - P / U.png">NT Edge 500 - P / U</option>
+                    <option value="NT Edge 500 B - P,4000.00,NT Edge 500 B - P.png">NT Edge 500 B - P</option>
+                    <option value="NT Edge 700 - P / U,3600.00,NT Edge 700 - P / U.png">NT Edge 700 - P / U</option>
+                    <option value="NT NU 60 - U,1600.00,NT NU 60 - U.png">NT NU 60 - U</option>
+                    <option value="NT NU 80 - U,2300.00,NT NU 80 - U.png">NT NU 80 - U</option>
+                    <option value="NT NU 3320 - U,2300.00,NT NU 3320 - U.png">NT NU 3320 - U</option>
+                    <option value="NT Radius 180 - P / U,2000.00,NT Radius 180 - P / U.png">NT Radius 180 - P / U</option>
+                    <option value="NT Radius 340 - P / U,2300.00,NT Radius 340 - P / U.png">NT Radius 340 - P / U</option>
+                    <option value="NT Radius 450 - P / U,2800.00,NT Radius 450 - P / U.png">NT Radius 450 - P / U</option>
+                    <option value="NT Radius 500 - P / U,3000.00,NT Radius 500 - P / U.png">NT Radius 500 - P / U</option>
+                    <option value="NT Radius 500 B - P ,4000.00,NT Radius 500 B - P .png">NT Radius 500 B - P </option>
+                    <option value="NT Radius 600 - P / U,3400.00,NT Radius 600 - P / U.png">NT Radius 600 - P / U</option>
+                    <option value="NT Radius 700 - P / U,3600.00,NT Radius 700 - P / U.png">NT Radius 700 - P / U</option>
+                    <option value="NT Radius 60 K - P / U,5400.00,NT Radius 60 K - P / U.png">NT Radius 60 K - P / U</option>
+                    <option value="NT Radius 70 K - P / U,5600.00,NT Radius 70 K - P / U.png">NT Radius 70 K - P / U</option>
+                    <option value="NT Zirkon 18 - U,1300.00,NT Zirkon 18 - U.png">NT Zirkon 18 - U</option>
+                    <option value="NT Zirkon 32 - U,1500.00,NT Zirkon 32 - U.png">NT Zirkon 32 - U</option>
+                    <option value="NT Zirkon 35 - U,1800.00,NT Zirkon 35 - U.png">NT Zirkon 35 - U</option>
+                    <option value="NT Zirkon 45 - U,2100.00,NT Zirkon 45 - U.png">NT Zirkon 45 - U</option>
+                </select>
+                <div id="sink_picture" style="display: inline; margin-left: 1em;">
+                    <span class="hand"></span>
+                </div><!-- .sink_picture -->
+            </div><!-- .calc_sink -->
+        </div><!-- .calc_sink_row -->
+
+
+        <div class="calc_cooker calc-row clear">
+
+            <div class="calc_name">
+                Antal hål för kokplåtar (spisar)?:
+            </div><!-- .calc_name -->
+            <div class="calc_input">
+                <span class="hand">
+                    <a rel="lightbox[]" href="/public/files/calc_pics/Pealt-paigalduv-pliidiplaat.png">
+                        <div class="float_image">
+                            <img src="/public/files/calc_pics/Pealt-paigalduv-pliidiplaat.png">
+                        </div><!-- .float_image -->
+                        Över monterad
+                    </a>
+                </span><!-- .hand -->
+                <input type="text" size="3" maxlength="2" name="cooker1">
+                <span class="units"></span><!-- .units -->
+            </div><!-- .calc_input -->
+
+            <div class="calc_input">
+                <span class="hand">
+                    <a rel="lightbox[]" href="/public/files/calc_pics/Uputatud-pliidiplaat.png">
+                        <div class="float_image">
+                            <img src="/public/files/calc_pics/Uputatud-pliidiplaat.png">
+                        </div><!-- .float_image -->
+                        Flush-fit
+                    </a>
+                </span><!-- .hand -->
+                <input type="text" size="3" maxlength="2" name="cooker2">
+                <span class="units"></span><!-- .units -->
+            </div><!-- .calc_input -->
+
+        </div><!-- .calc_cooker -->
+
+        <div class="calc_water_tap calc-row clear">
+            <div class="calc_name">
+                <span class="hand">
+                    <a rel="lightbox[]" href="/public/files/calc_pics/Segistiavad.png">
+                        <div class="float_image">
+                            <img src="/public/files/calc_pics/Segistiavad.png">
+                        </div><!-- .float_image -->
+                        Antal hål för kranar och kontakter?
+                    </a>
+                </span><!-- .hand -->
+            </div><!-- .calc_name -->
+            <div class="calc_input">
+                <span class="hand">&nbsp;</span><!-- .hand -->
+                <input type="text" size="3" maxlength="2" name="watertap">
+                <span class="units"></span><!-- .units -->
+            </div><!-- .calc_input -->
+        </div><!-- .calc_water_tap -->
+
+
+        <div class="calc_misc calc-row clear">
+            Uppmätning					<input type="text" size="5" maxlength="10" name="measurment" value="1000" readonly="">Sek
+            <span id="calc_transport">
+                Transport och installering
+                <select name="transport" class="required">
+                    <option value="">Välj region</option>
+                    <option value="2100,Stockholm">Stockholm</option>
+                    <option value="2100,Gävle">Gävle</option>
+                    <option value="2100,Örebro">Örebro</option>
+                    <option value="2100,Norrköping">Norrköping</option>
+                    <option value="3100,Linköping">Linköping</option>
+                    <option value="3100,Jönköping">Jönköping</option>
+                    <!--<option value="3100,Helsingborg">Helsingborg</option>-->
+                    <!--<option value="3100,Malmö">Malmö</option>-->
+                    <!--option value="3100,Karlskrona">Karlskrona</option-->
+                    <option value="5300,Västervik">Västervik</option>
+                    <!--option value="3700,Halmstad">Halmstad</option-->
+                    <option value="5300,Göteborg">Göteborg</option>
+                    <option value="4500,Lidköping">Lidköping</option>
+                    <option value="5300,Karlstad">Karlstad</option>
+                </select>
+                <input type="text" size="5" maxlength="6" name="transport_price" readonly="">
+                <span class="error_msg">Välj ditt område!</span><!-- .error_msg -->
+                <span class="price_units">Sek. (MOMS tillkommer)</span><!-- .price_units -->
+
+            </span><!-- #calc_transport -->
+        </div><!-- .calc_misc -->
+
+        <div class="calc_bottom_block clear">
+
+            <div class="calc_bottom_left_desc clear">
+                Din bänkskiva är beräknad på 30 mm tjockt material.  <br>Vid beställning av 20 mm tjockt material blir priset 10% billigare än angett pris. <br>Vid beställning av 40 mm tjockt material blir priset 10% dyrare än angett pris.<br>
+                <div class="calc_total_weight_wrap clear">
+                    <input type="hidden" name="total_weight_input" value="0">
+                    Din bänkskiva väger:
+                </div><!-- .calc_total_weight_wrap -->
+                <div id="total_weight">0</div>
+
+                <div class="calc_bottom_note clear">
+                    OBS! Innan Du beställer uppmätning, var säker på att alla önskade möbler som granitytorna kommer att monteras på är på rätt plats och att de inte behöver flyttas efter mätningen. Vårt team kan komma och mäta först när möbleringen är helt klar.
+                </div><!-- .calc_bottom_note -->
+
+                <div class="result_box">
+                    <input type="hidden" name="total_price_input" value="1500">
+                </div><!-- .result_box -->
+            </div><!-- .calc_bottom_left_desc -->
+
+            <div class="calc_bottom_form clear">
+                <div class="calc_form_line">
+                    <div class="calc_form_line_name">
+                        Namn*:
+                    </div><!-- .calc_form_line_name -->
+                    <input type="text" class="required" name="client_name">
+                    <div class="error_msg">
+                        Vänligen ange ditt namn!
+                    </div><!-- .error_msg -->
+                </div><!-- .calc_form_line -->
+                <div class="calc_form_line">
+                    <div class="calc_form_line_name">
+                        Adress*:
+                    </div>
+                    <input type="text" class="required" name="client_address">
+                    <div class="error_msg">
+                        Vänligen ange din adress!
+                    </div><!-- .error_msg -->
+                </div><!-- .calc_form_line -->
+                <div class="calc_form_line">
+                    <div class="calc_form_line_name">
+                        Postnr*:
+                    </div><!-- .calc_form_line_name -->
+                    <input type="text" class="required" name="client_post">
+                    <div class="error_msg">
+                        Vänligen ange ditt postnummer!
+                    </div><!-- .error_msg -->
+                </div><!-- .calc_form_line -->
+                <div class="calc_form_line">
+                    <div class="calc_form_line_name">
+                        Telefon*:
+                    </div><!-- .calc_form_line_name -->
+                    <input type="text" class="required" name="client_mobile">
+                    <div class="error_msg">
+                        Vänligen ange ditt telefon/mobil!
+                    </div><!-- .error_msg -->
+                </div><!-- .calc_form_line -->
+                <div class="calc_form_line">
+                    <div class="calc_form_line_name">
+                        E-post*:
+                    </div><!-- .calc_form_line_name -->
+                    <input type="text" class="required" name="client_email">
+                    <div class="error_msg">
+                        Vänligen ange din e-post adress!
+                    </div><!-- .error_msg -->
+                </div><!-- .calc_form_line -->
+                <div class="calc_form_line">
+                    Hur har du hört om GranitSet?:
+                    <select name="questionary">
+                        <option value="0"></option>
+                        <option value="Google">Google</option>
+                        <option value="Lokal tidning">Lokal tidning</option>
+                        <option value="Reklam på bilen">Reklam på bilen</option>
+                        <option value="Köksfirma">Köksfirma</option>
+                        <option value="Snickare">Snickare</option>
+                        <option value="Granne">Granne</option>
+                        <option value="Annat">Annat</option>
+                    </select>
+                </div><!-- .calc_form_line -->
+                <div class="calc_form_line">
+                    Datum för måttagning, mer information:
+                    <textarea name="calc_misc_input"></textarea>
+                </div><!-- .calc_form_line -->
+                <div id="error_message" ?="">
+                    Please fill all fields
+                </div><!-- .error_message -->
+                <div class="calc_form_line_name">
+                    Välj fil:
+                    <input type="file" name="upload[1]">
+                </div><!-- .calc_form_line_name -->
+
+                <div class="custom-captcha">
+                    Enter koden “granitset”:
+                    <input type="text" name="customcaptcha">
+                </div>
+            </div><!-- .calc_bottom_form -->
+
+
+        </div><!-- .calc_bottom_block -->
+        <div id="submit_place" class="clear">
+            <input type="submit" value="Skicka">
+        </div><!-- #submit_place -->
+    </form>
+</div>
