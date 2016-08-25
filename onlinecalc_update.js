@@ -68,7 +68,7 @@ function calc_weight() {
 
 	var res = 0;	
 
-	var size = $(".calc_item_measurments input").size()/2;
+	var size = $(".calc_item_measurments input").length / 2;
 
 	for (i=1;i <= size; i++) {
 
@@ -153,7 +153,7 @@ function calc_corners () {
 
 function calc_items() {
 
-	var size = $(".calc_item_measurments input").size()/2;
+	var size = $(".calc_item_measurments input").length /2;
 
 	var res = 0;
 
@@ -239,7 +239,7 @@ function calc_measurment() {
 
 }
 function calc_saagimine() {
-	var size = $(".calc_item_measurments input").size()/2;
+	var size = $(".calc_item_measurments input").length /2;
 	res = 0;
 	for (i=1;i <= size; i++) {
 
@@ -337,7 +337,7 @@ function recalculate() {
 }
 
 function add_piece(pieces) {
-	var currentSize = $('.calc_item_measurments').size();
+	var currentSize = $('.calc_item_measurments').length;
 
 	if(currentSize == pieces) {
 		return false;
@@ -369,7 +369,7 @@ function add_piece(pieces) {
 
 function add_piece_old($number) {
 	var $target = $(".calc_item_measurments");
-	var $size = $target.size();
+	var $size = $target.length;
 
 	if ($size > 1) {
 		for ($i = 1; $i < $size; $i++) {
@@ -403,7 +403,7 @@ function validate() {
 		$(this).removeClass('error');
 		if ($(this).val().length == 0 || $(this).val() == 0) {
 			$(this).addClass('error');
-         //console.log($(this).nextAll('.error_msg'));
+         console.log($(this).nextAll('.error_msg'));
          $(this).nextAll('.error_msg').show();
 			$cnt++;
 		}
@@ -589,7 +589,7 @@ scrollTo(document.body.scrollLeft, document.body.scrollTop - 1);
 	$('input[type=file]').live('change', function(e){
 */
 	$('input[type=file]').on('change', function(e){
-		  var size = $('input[type=file]').size();
+		  var size = $('input[type=file]').length;
 		  if (size < 5 && $(this).val().length > 0) {
 		  	copy=$(this).clone();
 		  	$(copy).val('').attr("name", "upload["+(size+1)+"]");
